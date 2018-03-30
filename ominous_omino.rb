@@ -38,12 +38,12 @@ def predict_who_wins(x, r, c, test_case)
 
   output = 'Case #' + "#{test_case}: #{winner}\n"
 
-  open("./output_files/ominous_omino.txt", "a") do |f|
+  open("./large_dataset.out", "a") do |f|
     f.puts output
   end
 end
 
-File.open("./input_files/exa.in", "r") do |f|
+File.open("./D-large-practice.in", "r") do |f|
   f.each_with_index do |line, index|
     if index == 0
       next
